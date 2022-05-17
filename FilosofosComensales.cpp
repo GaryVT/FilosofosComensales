@@ -1,4 +1,4 @@
- #include<stdio.h>
+#include<stdio.h>
 #include<pthread.h>
 #include<stdlib.h>
 #include<unistd.h>
@@ -142,7 +142,7 @@ void *filosofo(void *param) {
         printf("Filosofo %d esta pensando durante %d segundos\n", num_filosofo, tiempo_pensar);
         sleep(tiempo_pensar);//Dormimos el proceso durante el tiempo de pensamiento antes hallado
         coger_tenedores(num_filosofo);
-        printf("Filosofo %d esta comiendo durante %d segundos\n", num_filosofo, tiempo_pensar);
+        printf("Filosofo %d esta comiendo durante %d segundos\n", num_filosofo, tiempo_comer);
         sleep(tiempo_comer);//Dormimos el proceso durante el tiempo de comida antes hallado
         return_tenedores(num_filosofo);
     }
